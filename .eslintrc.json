@@ -1,3 +1,32 @@
 {
-  "extends": "next/core-web-vitals"
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": [
+        "plugin:react/recommended",
+        "standard-with-typescript",
+        "plugin:@next/next/recommended",
+        "prettier"
+    ],
+    "overrides": [
+    ],
+    "parserOptions": {
+        "project": "tsconfig.json",
+        "tsconfigRootDir": "./",
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react",
+        "prettier"
+    ],
+    "rules": {
+        "prettier/prettier": [
+            "error"
+        ],
+        "react/react-in-jsx-scope":"off",
+        "@typescript-eslint/explicit-function-return-type":"off",
+        "@typescript-eslint/no-non-null-assertion":"off",
+        "@typescript-eslint/strict-boolean-expressions":"off"
+    }
 }
