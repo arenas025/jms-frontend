@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 export const jmsApi = axios.create({
-	timeout: 500
+	timeout: 100
 })
 
 jmsApi.interceptors.response.use(

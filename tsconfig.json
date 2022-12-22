@@ -16,10 +16,11 @@
     "incremental": true,
     "baseUrl": "./",
     "paths": {
-      "@components/*": ["./components/*"],
-      "@redux/*": ["./redux/*"],
-      "@services/*": ["./services/*"],
-      "@styles/*":["./styles/*"]
+      "@components/*": ["./src/components"],
+      "@redux/*": ["./src/redux/*"],
+      "@services/*": ["./src/services/*"],
+      "@styles/*":["./styles/*"],
+      "@interfaces/*":["./src/redux/interfaces/*"]
 	},
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
