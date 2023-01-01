@@ -79,7 +79,6 @@ const index = () => {
 		const onUbication = (ubication: any) => {
 			// eslint-disable-next-line @typescript-eslint/restrict-template-expressions
 			console.log(ubication)
-			console.log('hola')
 		}
 
 		const onError = (error: any) => {
